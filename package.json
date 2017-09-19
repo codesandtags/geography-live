@@ -22,6 +22,7 @@
   "private": true,
   "dependencies": {
     "@angular/cli": "1.4.2",
+    "@angular/compiler-cli": "^4.4.1",
     "@angular/language-service": "^4.4.1",
     "@angular/animations": "^4.4.1",
     "@angular/common": "^4.4.1",
@@ -43,7 +44,6 @@
     "zone.js": "^0.8.17"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^4.4.1",
     "@types/jasmine": "~2.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.0.28",
