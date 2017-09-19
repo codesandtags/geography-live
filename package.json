@@ -8,7 +8,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build",
+    "build:prod": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -17,8 +17,8 @@
     "heroku-postbuild": "npm run build:prod"
   },
   "engines": {
-    "node": "^8.0",
-    "npm": "^5.0"
+    "node": "8.5.0",
+    "npm": "5.4.2"
   },
   "private": true,
   "dependencies": {
