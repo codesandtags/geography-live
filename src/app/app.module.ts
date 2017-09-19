@@ -8,6 +8,11 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './shared/error-404/error-404.component';
+import { ResultListComponent } from './results/result-list/result-list.component';
+import { ResultDetailComponent } from './results/result-detail/result-detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchService } from './search/search.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,18 @@ import { Error404Component } from './shared/error-404/error-404.component';
     FooterComponent,
     SearchComponent,
     HomeComponent,
-    Error404Component
+    Error404Component,
+    ResultListComponent,
+    ResultDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

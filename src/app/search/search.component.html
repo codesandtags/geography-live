@@ -1,4 +1,16 @@
-<section class="jumbotron text-center">
-  <h1>Here you can search</h1>
+<section class="search-box">
+  <form class="navbar-form" role="search" [formGroup]="searchForm">
+    <div class="input-group">
+      <input type="search"
+             class="form-control"
+             placeholder="Type a country or city..."
+             name="q"
+             autofocus
+             autocomplete="false"
+             (keydown)="onSearch()"
+             formControlName="q"
+      >
+    </div>
+  </form>
 </section>
 
