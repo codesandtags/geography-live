@@ -11,11 +11,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build:prod"
+    "postinstall": "npm run build:prod"
   },
   "engines": {
-    "node": "8.5.0",
-    "npm": "5.3.0"
+    "node": "8.5.0"
   },
   "private": true,
   "dependencies": {
