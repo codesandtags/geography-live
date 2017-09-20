@@ -30,6 +30,8 @@ export class SearchComponent implements OnInit {
 
     if (searchValue && searchValue.length >= 2) {
       this.searchService.searchByTerm(searchValue);
+    } else {
+      this.searchService.searchResults.emit([]);
     }
   }
 }
