@@ -1,6 +1,13 @@
 <div class="container">
-  <div class="row">
-    <app-result-detail class="col-xs-12 col-md-4" *ngFor="let result of searchResults" [result]="result"></app-result-detail>
+  <div class="row" *ngIf="isResultFound">
+    <app-result-detail class="col-xs-12 col-md-4" *ngFor="let result of searchResults"
+                       [result]="result"></app-result-detail>
+  </div>
+
+  <div class="alert">
+    <div class="alert alert-warning text-center" role="alert" *ngIf="!isResultFound">
+      There are not results! sorry. <span class="fa fa-map-o"></span>
+    </div>
   </div>
 </div>
 

@@ -9,6 +9,7 @@ import { SearchService } from '../../search/search.service';
 export class ResultListComponent implements OnInit {
 
   searchResults;
+  isResultFound = false;
 
   constructor(private searchService: SearchService) {
   }
@@ -16,6 +17,7 @@ export class ResultListComponent implements OnInit {
   ngOnInit() {
     this.searchService.searchResults.subscribe(data => {
       this.searchResults = data;
+      this.isResultFound = (data.length > 0);
     });
   }
 
