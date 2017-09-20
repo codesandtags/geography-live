@@ -14,11 +14,9 @@ export class ResultListComponent implements OnInit {
   }
 
   ngOnInit() {
-    /*
     this.searchService.searchResults.subscribe(data => {
       this.searchResults = data;
     });
-    */
   }
 
 }

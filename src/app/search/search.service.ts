@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class SearchService {
 
-  // searchResults = new EventEmitter<any>();
+  searchResults = new EventEmitter<any>();
 
   constructor(private http: HttpClient) {
   }
@@ -14,9 +14,9 @@ export class SearchService {
     this.http
       .get(url)
       .subscribe(data => {
-        // this.searchResults.emit(data);
+        this.searchResults.emit(data);
       }, error => {
-        // this.searchResults.emit([]);
+        this.searchResults.emit([]);
       });
   }
 
