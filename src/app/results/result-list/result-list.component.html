@@ -1,13 +1,16 @@
-<div class="container">
-  <div class="row" *ngIf="isResultFound">
-    <app-result-detail class="col-xs-12 col-md-4" *ngFor="let result of searchResults"
-                       [result]="result"></app-result-detail>
-  </div>
-
-  <div class="alert">
-    <div class="alert alert-warning text-center" role="alert" *ngIf="!isResultFound">
-      There are not results! sorry. <span class="fa fa-map-o"></span>
+<section>
+  <div class="container">
+    <div class="row" *ngIf="isResultFound">
+      <app-result-detail class="col-xs-12 col-md-4" *ngFor="let result of searchResults"
+                         [result]="result"></app-result-detail>
     </div>
+
+
+    <div class="alert alert-warning text-center mt-4" role="alert" *ngIf="!isResultFound">
+      <p class="lead">There are not results! sorry. <span class="fa fa-map-o"></span></p>
+    </div>
+
   </div>
-</div>
+</section>
+
 
