@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../../search/search.service';
+import { SearchService } from '../../../services/search/search.service';
 
 @Component({
   selector: 'app-result-list',

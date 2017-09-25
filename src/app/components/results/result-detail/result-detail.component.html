@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-block">
+    <img class="card-img img-fluid" src="{{result.flag}}" alt="Card image cap" height="90px" width="90px" style="margin: auto">
+    <div class="card-img-overlay d-flex flex-column">
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex flex-row justify-content-between bg-dark text-light">
+        <div>Country:</div>
+        <div>{{result.name}}</div>
+      </li>
+      <li class="list-group-item d-flex flex-row justify-content-between">
+        <div>Capital:</div>
+        <div>{{result.capital}}</div>
+      </li>
+      <li class="list-group-item d-flex flex-row justify-content-between">
+        <div>Population:</div>
+        <div>{{result.population | number:'1.0'}}</div>
+      </li>
+      <li class="list-group-item d-flex flex-row justify-content-between">
+        <div>Currency:</div>
+        <div>{{result.currencies[0].code}}</div>
+      </li>
+      <li class="list-group-item d-flex flex-row justify-content-between">
+        <div>Languages:</div>
+        <div>{{result.languages[0].name}}</div>
+      </li>
+    </ul>
+    <div class="card-footer text-center">
+      <a href="#" class="card-link btn btn-outline-primary">See more details...</a>
+    </div>
+  </div>
+</div>

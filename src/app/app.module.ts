@@ -1,17 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { SearchComponent } from './search/search.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent } from './components/main/app.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { SearchComponent } from './components/search/search.component';
+import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { Error404Component } from './shared/error-404/error-404.component';
-import { ResultListComponent } from './results/result-list/result-list.component';
-import { ResultDetailComponent } from './results/result-detail/result-detail.component';
+import { Error404Component } from './components/shared/error-404/error-404.component';
+import { ResultListComponent } from './components/results/result-list/result-list.component';
+import { ResultDetailComponent } from './components/results/result-detail/result-detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SearchService } from './search/search.service';
+import { SearchService } from './services/search/search.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
