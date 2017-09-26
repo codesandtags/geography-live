@@ -8,5 +8,8 @@ export const environment = {
     storageBucket: 'REPLACE_ME',
     messagingSenderId: 'REPLACE_ME',
   },
-  GOOGLE_MAPS_API_KEY: 'REPLACE_ME'
+  GOOGLE_MAPS_CONFIG: {
+    GOOGLE_MAPS_STATIC_API_KEY: 'REPLACE_ME',
+    GOOGLE_MAPS_WEB_API_KEY: 'REPLACE_ME'
+  }
 };

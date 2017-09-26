@@ -1,5 +1,5 @@
-<div class="full-detail container">
-  <div class="card">
+<div class="full-detail container pb-5">
+  <div class="card mb-4">
     <div class="card-header">
       <div class="row">
         <div class="col">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="card-body" *ngIf="isResultFound">
-      <app-map-detail></app-map-detail>
+      <app-map-detail [country]="result.name"></app-map-detail>
       <div class="row">
         <div class="col-md-6">
           <ul class="list-group list-group-flush">
