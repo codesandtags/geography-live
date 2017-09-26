@@ -1,15 +1,15 @@
 export const environment = {
-  production: true,
-  FIREBASE_CONFIG: {
-    apiKey: 'REPLACE_ME',
-    authDomain: 'REPLACE_ME',
-    databaseURL: 'REPLACE_ME',
-    projectId: 'REPLACE_ME',
-    storageBucket: 'REPLACE_ME',
-    messagingSenderId: 'REPLACE_ME',
-  },
+  production: false,
   GOOGLE_MAPS_CONFIG: {
-    GOOGLE_MAPS_STATIC_API_KEY: 'REPLACE_ME',
-    GOOGLE_MAPS_WEB_API_KEY: 'REPLACE_ME'
+    GOOGLE_MAPS_STATIC_API_KEY: 'AIzaSyDRszdhEjLcSsweWx8TOaHXx6CmNl_1SK8',
+    GOOGLE_MAPS_WEB_API_KEY: 'AIzaSyCE7w8qAqMbxLFPGQHeZFZyOG-HHa-czTI'
+  },
+  FIREBASE_CONFIG : {
+    apiKey: 'AIzaSyB2XHz1vx57pucaQke1rZirDNeZMK_39VQ',
+    authDomain: 'geography-live.firebaseapp.com',
+    databaseURL: 'https://geography-live.firebaseio.com',
+    projectId: 'geography-live',
+    storageBucket: 'geography-live.appspot.com',
+    messagingSenderId: '229196417027'
   }
 };
