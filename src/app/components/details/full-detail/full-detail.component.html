@@ -1,0 +1,62 @@
+<div class="full-detail container pb-5">
+  <div class="card mb-4">
+    <div class="card-header">
+      <div class="row">
+        <div class="col">
+          <h3>{{country | titlecase}}</h3>
+        </div>
+        <div class="col text-right" *ngIf="isResultFound">
+          <img src="{{result.flag}}" alt="Card image cap" height="30px">
+        </div>
+      </div>
+    </div>
+    <div class="card-body" *ngIf="isResultFound">
+      <app-map-detail [country]="result.name"></app-map-detail>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Capital:</div>
+              <div>{{result.capital}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Population:</div>
+              <div>{{result.population | number:'1.0'}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Currency:</div>
+              <div>{{result.currencies[0].code}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Languages:</div>
+              <div>{{result.languages[0].name}}</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Time Zone:</div>
+              <div>{{result.timezones[0]}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Region:</div>
+              <div>{{result.region}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Calling Code:</div>
+              <div>{{result.callingCodes[0]}}</div>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-between">
+              <div>Alpha code:</div>
+              <div>{{result.alpha3Code}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-center">
+      <a routerLink="/" class="card-link btn btn-outline-primary">Search again</a>
+    </div>
+  </div>
+</div>
