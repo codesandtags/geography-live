@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../../../services/search/search.service';
+import { SearchService } from '../../../services/search.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -29,7 +29,6 @@ export class FullDetailComponent implements OnInit {
 
   private retrieveCountryData() {
     this.searchService.searchResults.subscribe(data => {
-      console.info('results from component => data', data);
       this.isResultFound = (data.length > 0);
       this.result = data[0];
     });

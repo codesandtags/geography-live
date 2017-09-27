@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AppConstants } from '../../commons/AppConstants';
+import { AppConstants } from '../commons/AppConstants';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -44,7 +44,6 @@ export class SearchService {
 
   public getStatisticsByCountry(country: string): void {
     this.statistics = this.db.list(`/statistics/${country}`);
-    console.log('RESULTADO => ', this.statistics);
   }
 
 }
