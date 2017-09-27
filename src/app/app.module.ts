@@ -19,9 +19,11 @@ import { ResultDetailComponent } from './components/results/result-detail/result
 import { FullDetailComponent } from './components/details/full-detail/full-detail.component';
 import { MapDetailComponent } from './components/details/map-detail/map-detail.component';
 // Services Application Imports
-import { SearchService } from './services/search/search.service';
+import { SearchService } from './services/search.service';
 import { environment } from '../environments/environment';
 import { MainMenuComponent } from './components/shared/main-menu/main-menu.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { MainMenuComponent } from './components/shared/main-menu/main-menu.compo
     ResultDetailComponent,
     FullDetailComponent,
     MapDetailComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { MainMenuComponent } from './components/shared/main-menu/main-menu.compo
   providers: [
     SearchService,
     AngularFireAuth,
-    AngularFireDatabase
+    AngularFireDatabase,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
