@@ -44,7 +44,6 @@ export class SearchService {
 
   public getStatisticsByCountry(country: string): void {
     this.statistics = this.db.list(`/statistics/${country}`);
-    console.log('RESULTADO => ', this.statistics);
   }
 
 }

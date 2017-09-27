@@ -29,7 +29,6 @@ export class FullDetailComponent implements OnInit {
 
   private retrieveCountryData() {
     this.searchService.searchResults.subscribe(data => {
-      console.info('results from component => data', data);
       this.isResultFound = (data.length > 0);
       this.result = data[0];
     });
