@@ -3,6 +3,7 @@
   "short_name": "Geolive",
   "start_url": "/index.html",
   "scope": "../",
+  "display": "fullscreen",
   "orientation": "portrait-primary",
   "background_color": "#fff",
   "theme_color": "#3f51b5",
