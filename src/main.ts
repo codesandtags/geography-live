@@ -14,7 +14,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 // Register the service worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('assets/sw.js')
+    .register('assets/sw.js', { scope: './'})
     .then(() => {
       console.log('Service worker registered');
     });
